@@ -11,7 +11,9 @@ module.exports = function(sequelize, DataTypes){
         type: DataTypes.BOOLEAN,
         defaultValue: false
       },
-    });
+    }, {
+      timestamps:false
+     });
   return burgers;
 };
 // // Import the ORM to create functions that will interact with the database.
