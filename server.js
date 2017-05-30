@@ -5,7 +5,7 @@ var PORT = process.env.PORT || 8080;
 var app = express();
 var db = require("./models");
 var exphbs = require("express-handlebars");
-var routes = require("./routes/api-routes.js");
+var routes = require("./controllers/burgers_controller.js");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
